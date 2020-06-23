@@ -48,3 +48,82 @@ print(fm1 % 6)
 print(fm2 % (6, 22))
 print(fm3 % '06')
 print(fm4 % ('2020',6, 22, '월'))
+
+#문자열 관련 함수 교재 P67 ~ P71
+#문자열 개수 세기
+a = "hobby"
+a.count('b')
+
+print(a.count('b'))
+
+#위치 알려주기 1
+a = "Python is the best choice"
+a.find('b')
+
+print(a.find('b'))
+
+a.find('k')
+
+#위치 알려주기 2
+a = "Life is too short"
+a.index('t')
+
+print(a.index('t'))
+
+#a.index('k')
+
+#문자열 삽입
+print(",".join('abcd'))
+
+print(",".join(['a', 'b', 'c', 'd']))
+
+
+#소문자를 대문자로 바꾸기
+a = "hi"
+a.upper()
+
+print(a.upper())
+
+#대문자를 소문자로 바꾸기
+a = "HI"
+a.lower()
+print(a.lower())
+
+#왼쪽 공백 지우기
+a = " hi "
+a.lstrip()
+
+print(a.lstrip())
+
+#오른쪽 공백 지우기
+a= " hi "
+a.rstrip()
+
+print(a.rstrip())
+
+' hi'
+
+#양쪽 공백 지우기
+a = " hi "
+a.strip()
+
+print(a.strip())
+
+#문자열 바꾸기
+a = "Life is too short"
+a.replace("Life", "Your leg")
+
+print(a.replace("Life", "Your leg"))
+
+
+
+
+#문자열 나누기
+a = "Life is too short"
+a.split()
+print(a.split())
+
+b = "a:b:c:d"
+b.split(':')
+
+print(b.split(':'))
